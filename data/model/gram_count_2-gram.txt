@@ -1,0 +1,16 @@
+<s> aku||2
+aku ingin||2
+ingin makan||2
+makan .||2
+. </s>||5
+ingin tidur||2
+tidur .||2
+<s> mereka||1
+mereka ingin||1
+ingin minum||1
+minum .||1
+<s> dia||1
+dia juga||1
+juga ingin||1
+<s> kamu||1
+kamu ingin||1
