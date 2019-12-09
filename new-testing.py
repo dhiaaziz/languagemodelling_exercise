@@ -13,8 +13,8 @@ modelUnigram = myngram.gram_count_load_from_file(modelUnigram, 1)
 modelBigram = myngram.gram_count_load_from_file(modelBigram, 2)
 modelTrigram = myngram.gram_count_load_from_file(modelTrigram, 3)
 
-
-inputSentence = "aku ingin tidur."
+inputSentence = input("Masukkan kalimat testing: ")
+# inputSentence = "Tiga puluh persen dari seluruh anggota PEKKA yang disurvei yang hidup di bawah garis kemiskinan tidak memiliki akses terhadap Jamkesmas"
 inputSentence = inputSentence.lower()
 testingSentence = myngram.insert_startendtag_to_sentence(inputSentence)
 # print(testingSentence)
@@ -27,7 +27,7 @@ testingGram_1 = {}
 testingGram_2 = {}
 testingGram_3 = {}
 
-
+# ==> KONFIGURASI <--
 V = len(modelUnigram) # vocabulary Size
 alpha = 0.001 #for alpha-smoothing
 
@@ -61,10 +61,16 @@ perplexity1 = 2**avgEntropy1
 perplexity2 = 2**avgEntropy2
 perplexity3 = 2**avgEntropy3
 
-print("Perpelixity unigram : " + str(perplexity1))
-print("Perpelixity bigram : " + str(perplexity2))
-print("Perpelixity trigram : " + str(perplexity3))
+print("Perplexity unigram : " + str(perplexity1))
+print("Perplexity bigram : " + str(perplexity2))
+print("Perplexity trigram : " + str(perplexity3))
 
 
 # print(modelUnigram['ingin'])
 # allWordsCount = sum(modelUnigram.values())
+
+# kedua layanan tersebut merupakan kebutuhan dasar yang wajib disediakan bagi masyarakat
+
+# Yasonna menjelaskan bahwa aturan terkait ancaman hukuman mati saat ini hanya berlaku untuk pelaku korupsi terkait bencana alam
+# Berkat hasil tersebut, kontingen Merah Putih mengumpulkan 67 medali emas di SEA Games 2019.
+# Jumlah tersebut mempertahankan posisi Indonesia di urutan kedua pada klasemen SEA Games 2019.

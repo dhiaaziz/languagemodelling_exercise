@@ -6,8 +6,8 @@ import corpus
 import myngram
 
 
-loadCorpus = corpus.load_corpus_to_list('data/akuingin.id')
-# loadCorpus = corpus.load_corpus_to_list('data/SMERU-26870.id')
+# loadCorpus = corpus.load_corpus_to_list('data/akuingin.id')
+loadCorpus = corpus.load_corpus_to_list('data/SMERU-26870.id')
 listCorpus = [loadCorpus[index].lower() for index in range(len(loadCorpus))]
 # listCorpus = corpus.load_corpus_to_list("data/buildtrainingdata.id")
 for index in range(0, len(listCorpus)):
@@ -19,7 +19,8 @@ for index in range(0, len(listCorpus)):
 for i in range(0, 3):
     n = i + 1
     ngramsCount = {}
-    ngramsProb = {}
+    # ngramsProb = {}
+    print ("Proses " + str(n) +"-gram")
 
     for index in range(0, len(listCorpus)):
         sentence = listCorpus[index]
